@@ -46,6 +46,9 @@ export default class ApiIntro extends Component {
 							<a className="btn btn-primary m-1" href="https://github.com/facebook/create-react-app">
 								Create React App
 							</a>
+							<a className="btn btn-primary m-1" href="https://github.com/ReactTraining/react-router">
+								React Router
+							</a>
 						</div>
 						<hr />
 						<div>
