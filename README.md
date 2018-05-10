@@ -5,6 +5,8 @@ We are using the[ **Create Reactp App**](https://github.com/facebook/create-reac
 
 This APP is really simple and it shows how to fetch data from a API.
 
+You can see it in action in: http://active-labs.net/simple-react-app/
+
 #### Instructions to Run the App
 
 You can clone or fork this repository and then
