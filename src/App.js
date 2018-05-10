@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import axios from 'axios';
 
+// API CLASS
 import API from './flux/api';
 
 // Components
 import Nav from './components/nav';
 import ApiIntro from './components/intro';
 import MainAPP from './components/main';
-
-import axios from 'axios';
 
 class App extends Component {
 	constructor(props){
@@ -22,15 +21,14 @@ class App extends Component {
 	_fetchData(){
 		const apiFetch = new API;
 		apiFetch._fetchPosts().then( response => this.setState({ list: response.data }) );
-
-		this.forceUpdate();
+		var target = document.getElementById("theApp");
 	}
 	render() {
 		return(
 			<div>
-				<Nav _fetchData={this._fetchData} />
+				<Nav />
 				<ApiIntro />
-				<MainAPP posts={this.state.list} />
+				<MainAPP _fetchData={this._fetchData} posts={this.state.list} />
 			</div>
 		)
 	}
