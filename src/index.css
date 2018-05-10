@@ -34,3 +34,19 @@ body {
 ul li {
   list-style: none;
 }
+
+h5 {
+  font-weight: 600;
+}
+
+ul li h5 {
+  font-weight: 600;
+  font-size: 17px;
+}
+ul li p {
+  font-size: 14px;
+}
+
+textarea {
+  min-height: 300px;
+}
