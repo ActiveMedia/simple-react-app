@@ -50,3 +50,7 @@ ul li p {
 textarea {
   min-height: 300px;
 }
+
+.footer a {
+  display: inline-block;
+}

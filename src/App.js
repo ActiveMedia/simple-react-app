@@ -6,6 +6,7 @@ import API from './flux/api';
 
 // Components
 import Nav from './components/nav';
+import Footer from './components/footer';
 import ApiIntro from './components/intro';
 import MainAPP from './components/main';
 
@@ -29,6 +30,7 @@ class App extends Component {
 				<Nav />
 				<ApiIntro />
 				<MainAPP _fetchData={this._fetchData} posts={this.state.list} />
+				<Footer />
 			</div>
 		)
 	}
