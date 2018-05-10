@@ -12,14 +12,14 @@ export default class Nav extends Component {
 							</div>
 							<div className="col-md-9 text-right p-3">
 								<div className="btn-container pr-2">
-									<button onClick={this.props._fetchData} className="btn btn-dark">
-										Fetch Data
-									</button>
+									<a href="/" className="btn btn-dark">
+										Fetch
+									</a>
 								</div>
 								<div className="btn-container pr-2">
-									<button className="btn btn-dark">
-										Post Data
-									</button>
+									<a href="/post" className="btn btn-dark">
+										Post
+									</a>
 								</div>
 							</div>
 						</div>
