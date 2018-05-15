@@ -14,11 +14,11 @@ export default class Footer extends Component {
 			<div className="container footer mb-4 mt-4">
 				<div className="row">
 					<div class="col-12 text-center">
-						<a href="https://github.com/activemedia/" target="_blank">
-							<img style={imageStyle} src={GitHub} />
+						<a rel="noopener noreferrer" href="https://github.com/activemedia/" target="_blank">
+							<img alt="GitHub" style={imageStyle} src={GitHub} />
 						</a>
-						<a href="https://activemedia.pt" target="_blank">
-							<img style={imageStyle} src={Active} />
+						<a rel="noopener noreferrer" href="https://activemedia.pt" target="_blank">
+							<img alt="ActiveMedia" style={imageStyle} src={Active} />
 						</a>
 					</div>
 				</div>
