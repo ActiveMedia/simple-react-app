@@ -1,13 +1,5 @@
 import React, { Component } from 'react';
 
-import reactLogo from '../assets/logos/react.svg';
-import fetchImage from '../assets/images/fetch.png';
-
-const imageStyle = {
-	width: '100%',
-	heigth: 'auto',
-}
-
 export default class ApiIntro extends Component {
 	render(){
 		return(
@@ -20,13 +12,13 @@ export default class ApiIntro extends Component {
 					</div>
 					<div className="col-md-6 mycontent-left">
 						<p>
-							This is a sample project as we are developing our skills in React integrating an API. For example, we could use the <a className="bold" href="https://developer.wordpress.org/rest-api/" target="_blank">WordPress Rest API</a>, but we are using the <a className="bold" href="https://jsonplaceholder.typicode.com/posts/1">JSON Placeholder API Project</a>.
+							This is a sample project as we are developing our skills in React integrating an API. For example, we could use the <a rel="noopener noreferrer" className="bold" href="https://developer.wordpress.org/rest-api/" target="_blank">WordPress Rest API</a>, but we are using the <a className="bold" href="https://jsonplaceholder.typicode.com/posts/1">JSON Placeholder API Project</a>.
 						</p>
 						<p>
 							JSON Placeholder is <span class="italic bold">a fake online REST API for testing and Prototyping</span> as they define themselves. If you want to know more about this project <a href="https://github.com/typicode/jsonplaceholder#how-to">read more here</a>.
 						</p>
 						<p>
-							We are also using <a className="bold" href="https://github.com/facebook/create-react-app">Create React App</a> as our boiler tempalte. <br />
+							We are also using <a rel="noopener noreferrer" className="bold" href="https://github.com/facebook/create-react-app">Create React App</a> as our boiler tempalte. <br />
 							Create React App is a great tool to build react apps with no build configuration and also a easy tool to use to start learning React JS. <br/>
 							Another great thing about this tool is that you don't need to install Babel or Webpack to start developing because they are preconfigured.
 						</p>
@@ -34,25 +26,25 @@ export default class ApiIntro extends Component {
 					<div className="col-md-6">
 						<h6 className="bold">Here are some Documentation about the technogoly we are using here.</h6>
 						<div className="text-left">
-							<a className="btn btn-primary m-1" href="https://reactjs.org/docs/hello-world.html">
+							<a rel="noopener noreferrer" className="btn btn-primary m-1" href="https://reactjs.org/docs/hello-world.html">
 								REACT JS
 							</a>
-							<a className="btn btn-primary m-1" href="https://github.com/axios/axios">
+							<a rel="noopener noreferrer" className="btn btn-primary m-1" href="https://github.com/axios/axios">
 								AXIOS
 							</a>
-							<a className="btn btn-primary m-1" href="https://getbootstrap.com/docs/4.0/getting-started/introduction/">
+							<a rel="noopener noreferrer" className="btn btn-primary m-1" href="https://getbootstrap.com/docs/4.0/getting-started/introduction/">
 								BOOTSTRAP 4
 							</a>
-							<a className="btn btn-primary m-1" href="https://github.com/facebook/create-react-app">
+							<a rel="noopener noreferrer" className="btn btn-primary m-1" href="https://github.com/facebook/create-react-app">
 								Create React App
 							</a>
-							<a className="btn btn-primary m-1" href="https://github.com/ReactTraining/react-router">
+							<a rel="noopener noreferrer" className="btn btn-primary m-1" href="https://github.com/ReactTraining/react-router">
 								React Router
 							</a>
 						</div>
 						<hr />
 						<div>
-							<h6 className="bold"> Here's our APP Fetch Flux </h6>
+							
 						</div>
 					</div>
 				</div>
