@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 
+import List from './listElement';
+
 import defaultImage from '../assets/images/default.png';
 import { shuffle } from '../flux/functions';
 const imageStyle = {
 	width: '100%',
 	heigth: 'auto',
 }
+
 
 export default class MainAPP extends Component {
 	constructor(){
@@ -19,7 +22,7 @@ export default class MainAPP extends Component {
 	render(){
 		const posts = this.props.posts;
 		shuffle( posts );
-		if( posts != '' ){
+		if( posts !== '' ){
 			return(
 				<div className="container" id="theApp">
 					<div className="row">
@@ -32,13 +35,7 @@ export default class MainAPP extends Component {
 							<ul className="row">
 								{
 									posts.slice(0, 8).map(( post, index ) => (
-										<li className="col-md-3">
-											<img style={imageStyle} src={defaultImage} />
-											<div class="mt-3 mb-3">
-												<h5>{post.title}</h5>
-											</div>
-											<p>{post.body}</p>
-										</li>
+										<List title={post.title} body={post.body} image={defaultImage} elementStyle={imageStyle} />
 									))
 								}
 							</ul>
