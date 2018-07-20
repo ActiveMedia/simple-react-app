@@ -11,12 +11,16 @@ import Footer from './components/footer';
 import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter, Route } from 'react-router-dom';
 
+import createBrowserHistory from 'history/createBrowserHistory'
+
+const history = createBrowserHistory()
+
 class SimpleApp extends React.Component {
 	render(){
 		return(
 			<div>
 				<Nav />
-				<BrowserRouter basename={'/simple-react-app'}>
+				<BrowserRouter history={ history } basename={'/simple-react-app'}>
 					<div>
 						<Route exact path="/" component={App} />
 						<Route exact path="/post" component={Post} />
